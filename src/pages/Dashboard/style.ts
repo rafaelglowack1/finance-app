@@ -39,6 +39,7 @@ export const ChartContainer = styled.div`
     padding: 30px;
     width: 1060px;
     border-radius: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     h4 {
         margin-bottom: 20px;
@@ -53,15 +54,28 @@ export const ChartContainerPie = styled(ChartContainer)`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `
 export const SummaryContainer = styled.div`
     background-color: ${colors.Element};
-    margin-top: 30px;
+    margin-top: 25px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `
 export const SummaryItem = styled.div`
     padding: 20px;
-    border-bottom: 1px solid ${colors.TextSecondary};
-    background-color: ${colors.Loss};`
+    background-color: ${colors.Element};
+    cursor: pointer;
+    height: 80px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #edeff3ff;
+        
+    }
+    `
+
     
 export const SummaryContent = styled.div`
   overflow: hidden;
@@ -81,3 +95,27 @@ export const SummaryContent = styled.div`
     transform: translateY(0);
   }
 `;
+
+export const SummaryList = styled.ul`
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: ${colors.Element};
+    border-top: 1px solid ${colors.background};
+
+    &:hover {
+        background-color: #e9ecf1ff;
+    }
+    li {
+        padding: 15px;
+    }
+`
+export const SummaryType = styled(SummaryList)`
+    background-color: #f1f3f7ff;
+    li {
+        padding: 10px 15px;
+    }
+    &:hover {
+        background-color: #f1f3f7ff;
+    }
+`

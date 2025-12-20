@@ -19,7 +19,7 @@ export const Sidebar = styled.aside`
     margin-bottom: 50px
     `
 export const BottomIcons = styled(NavLink)`
-  position: relative; /* IMPORTANTE: isso ancora a tooltip ao botão */
+  position: relative;
   background-color: ${colors.Element};
   border-radius: 18px;
   margin-bottom: 20px;

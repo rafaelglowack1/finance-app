@@ -2,7 +2,7 @@ import { useState } from "react"
 import Example from "../../charts/lineChart"
 import CustomActiveShapePieChart from "../../charts/PieChart"
 import { Container } from "../../styles"
-import { Box, ChartContainer, ChartContainerPie, DashboardContainer, SummaryContainer, SummaryContent, SummaryItem } from "./style"
+import { Box, ChartContainer, ChartContainerPie, DashboardContainer, SummaryContainer, SummaryContent, SummaryItem, SummaryList, SummaryType } from "./style"
 
 const Dashboard = () => {
     const [ativo, setAtivo] = useState(false)
@@ -54,7 +54,83 @@ const Dashboard = () => {
                 <SummaryContent className={ativo ? "open" : ""} >
                     <ul>
                         <li>
-                            <ul style={{display: 'flex', justifyContent: 'space-between'}}>
+                            <SummaryType>
+                                <li><h4>Ativo</h4></li>
+                                <li><h4>Qtd.</h4></li>
+                                <li><h4>Preço Médio</h4></li>
+                                <li><h4>Preço Atual</h4></li>
+                                <li><h4>Valor Total</h4></li>
+                                <li><h4>Variação</h4></li>
+                                <li><h4>% Carteira</h4></li>
+                            </SummaryType>
+                        </li>
+
+                        <li>
+                            <SummaryList>
+                                <li><p>PETR4</p></li>
+                                <li><p>500</p></li>
+                                <li><p>R$ 24,90</p></li>
+                                <li><p>R$ 29,50</p></li>
+                                <li><p>R$ 14.750,00</p></li>
+                                <li><p>+18,43%</p></li>
+                                <li><p>23,61%</p></li>
+                            </SummaryList>
+                        </li>
+                        <li>
+                            <SummaryList>
+                                <li><p>PETR4</p></li>
+                                <li><p>500</p></li>
+                                <li><p>R$ 24,90</p></li>
+                                <li><p>R$ 29,50</p></li>
+                                <li><p>R$ 14.750,00</p></li>
+                                <li><p>+18,43%</p></li>
+                                <li><p>23,61%</p></li>
+                            </SummaryList>
+                        </li>
+                        <li>
+                            <SummaryList>
+                                <li><p>PETR4</p></li>
+                                <li><p>500</p></li>
+                                <li><p>R$ 24,90</p></li>
+                                <li><p>R$ 29,50</p></li>
+                                <li><p>R$ 14.750,00</p></li>
+                                <li><p>+18,43%</p></li>
+                                <li><p>23,61%</p></li>
+                            </SummaryList>
+                        </li>
+                        <li>
+                            <SummaryList>
+                                <li><p>PETR4</p></li>
+                                <li><p>500</p></li>
+                                <li><p>R$ 24,90</p></li>
+                                <li><p>R$ 29,50</p></li>
+                                <li><p>R$ 14.750,00</p></li>
+                                <li><p>+18,43%</p></li>
+                                <li><p>23,61%</p></li>
+                            </SummaryList>
+                        </li>
+                        <li>
+                            <SummaryList>
+                                <li><p>PETR4</p></li>
+                                <li><p>500</p></li>
+                                <li><p>R$ 24,90</p></li>
+                                <li><p>R$ 29,50</p></li>
+                                <li><p>R$ 14.750,00</p></li>
+                                <li><p>+18,43%</p></li>
+                                <li><p>23,61%</p></li>
+                            </SummaryList>
+                        </li>
+                    </ul>
+
+
+                </SummaryContent>
+            </SummaryContainer>
+            <SummaryContainer>
+                <SummaryItem onClick={Mostrar}><h4>Resumo dos Investimentos</h4></SummaryItem>
+                <SummaryContent className={ativo ? "open" : ""} >
+                    <ul>
+                        <li>
+                            <SummaryList style={{backgroundColor:'#f1f3f7ff' }}>
                                 <li><h4>Ativo</h4></li>
                                 <li><h4>Qtd.</h4></li>
                                 <li><h4>Preço Médio</h4></li>
@@ -62,11 +138,11 @@ const Dashboard = () => {
                                 <li><h4>Valor Total</h4></li>
                                 <li><h4>Variação</h4></li>
                                 <li><h4>% Carteira</h4></li>
-                            </ul>
+                            </SummaryList>
                         </li>
 
                         <li>
-                            <ul style={{display: 'flex', justifyContent: 'space-between'}}>
+                            <SummaryList>
                                 <li><p>PETR4</p></li>
                                 <li><p>500</p></li>
                                 <li><p>R$ 24,90</p></li>
@@ -74,10 +150,10 @@ const Dashboard = () => {
                                 <li><p>R$ 14.750,00</p></li>
                                 <li><p>+18,43%</p></li>
                                 <li><p>23,61%</p></li>
-                            </ul>
+                            </SummaryList>
                         </li>
                         <li>
-                            <ul style={{display: 'flex', justifyContent: 'space-between'}}>
+                            <SummaryList>
                                 <li><p>PETR4</p></li>
                                 <li><p>500</p></li>
                                 <li><p>R$ 24,90</p></li>
@@ -85,10 +161,10 @@ const Dashboard = () => {
                                 <li><p>R$ 14.750,00</p></li>
                                 <li><p>+18,43%</p></li>
                                 <li><p>23,61%</p></li>
-                            </ul>
+                            </SummaryList>
                         </li>
                         <li>
-                            <ul style={{display: 'flex', justifyContent: 'space-between'}}>
+                            <SummaryList>
                                 <li><p>PETR4</p></li>
                                 <li><p>500</p></li>
                                 <li><p>R$ 24,90</p></li>
@@ -96,10 +172,10 @@ const Dashboard = () => {
                                 <li><p>R$ 14.750,00</p></li>
                                 <li><p>+18,43%</p></li>
                                 <li><p>23,61%</p></li>
-                            </ul>
+                            </SummaryList>
                         </li>
                         <li>
-                            <ul style={{display: 'flex', justifyContent: 'space-between'}}>
+                            <SummaryList>
                                 <li><p>PETR4</p></li>
                                 <li><p>500</p></li>
                                 <li><p>R$ 24,90</p></li>
@@ -107,9 +183,21 @@ const Dashboard = () => {
                                 <li><p>R$ 14.750,00</p></li>
                                 <li><p>+18,43%</p></li>
                                 <li><p>23,61%</p></li>
-                            </ul>
+                            </SummaryList>
+                        </li>
+                        <li>
+                            <SummaryList>
+                                <li><p>PETR4</p></li>
+                                <li><p>500</p></li>
+                                <li><p>R$ 24,90</p></li>
+                                <li><p>R$ 29,50</p></li>
+                                <li><p>R$ 14.750,00</p></li>
+                                <li><p>+18,43%</p></li>
+                                <li><p>23,61%</p></li>
+                            </SummaryList>
                         </li>
                     </ul>
+
 
                 </SummaryContent>
             </SummaryContainer>
