@@ -1,17 +1,17 @@
-import styled, { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const colors = {
-    primary: "#0A84FF",
-    BackgroundPrimary: "#337ec9ff",
-    TextPrimary: "#1A1A1A",
-    TextSecondary: "rgba(57, 57, 61, 0.6)",
-    background: "#e9e9e9ff",
-    Element: "#FFFFFF",
-    Profit: "#1DB954",
-    BackgroundProfit: "#E8F8ED",
-    Loss: "#E74C3C",
-    BackgroundLoss: "#FCEDEB",
-}
+  primary: '#0A84FF',
+  BackgroundPrimary: '#438cd49f',
+  TextPrimary: '#1A1A1A',
+  TextSecondary: 'rgba(57, 57, 61, 0.6)',
+  background: '#e9e9e9ff',
+  Element: '#FFFFFF',
+  Profit: '#1DB954',
+  BackgroundProfit: '#E8F8ED',
+  Loss: '#E74C3C',
+  BackgroundLoss: '#FCEDEB',
+};
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -24,8 +24,9 @@ export const GlobalStyle = createGlobalStyle`
         color: ${colors.TextPrimary};
     }
     
-`
+`;
 
 export const Container = styled.div`
-    max-width: 1700px;
-    margin: 0 auto;`
+  max-width: 1700px;
+  margin: 0 auto;
+`;

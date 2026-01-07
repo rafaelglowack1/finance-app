@@ -1,14 +1,14 @@
-import Header from "../../components/Header";
-import SideBar from "../../components/SideBar";
-import { Outlet } from "react-router-dom";
+import Header from '../../components/Header';
+import SideBar from '../../components/SideBar';
+import { Outlet } from 'react-router-dom';
 
 const AppLayout = () => {
   return (
     <div
       style={{
-        display: "flex",
-        height: "100vh",
-        overflow: "hidden",
+        display: 'flex',
+        height: '100vh',
+        overflow: 'hidden',
       }}
     >
       {/* SIDEBAR */}
@@ -19,8 +19,8 @@ const AppLayout = () => {
       {/* CONTEÚDO PRINCIPAL */}
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
+          display: 'flex',
+          flexDirection: 'column',
           flex: 1,
           minHeight: 0,
         }}
@@ -34,8 +34,8 @@ const AppLayout = () => {
         <div
           style={{
             flex: 1,
-            overflowY: "auto",
-            padding: "20px",
+            overflowY: 'auto',
+            padding: '20px',
             minHeight: 0,
           }}
         >

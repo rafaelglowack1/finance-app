@@ -1,23 +1,22 @@
-import styled from "styled-components";
-import { colors } from "../../styles";
-import { NavLink } from "react-router-dom";
-import { Icons } from "../Header/styles";
-
+import styled from 'styled-components';
+import { colors } from '../../styles';
+import { NavLink } from 'react-router-dom';
+import { Icons } from '../Header/styles';
 
 export const Sidebar = styled.aside`
-    width: 85px;
-    height: 100vh;
-    background-color: ${colors.Element};
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 12px;
-    border-right: 2px solid ${colors.background};
-`
-    export const HomeIcon = styled(Icons)`
-    background-color: ${colors.primary};
-    margin-bottom: 50px
-    `
+  width: 85px;
+  height: 100vh;
+  background-color: ${colors.Element};
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 12px;
+  border-right: 2px solid ${colors.background};
+`;
+export const HomeIcon = styled(Icons)`
+  background-color: ${colors.primary};
+  margin-bottom: 50px;
+`;
 export const BottomIcons = styled(NavLink)`
   position: relative;
   background-color: ${colors.Element};
@@ -59,23 +58,19 @@ export const BottomIcons = styled(NavLink)`
   }
 `;
 
-    export const SIdeIcons = styled.div`
-    display: flex;
-    flex-direction: column;
-`
+export const SIdeIcons = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 export const ExitIcon = styled(Icons)`
-    transition: background-color 0.3s ease-in-out;
-    border-radius: 18px;
-    width: 60px;
-    height: 60px;
-    background-color: ${colors.Element};
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 18px;
+  width: 60px;
+  height: 60px;
+  background-color: ${colors.Element};
 
-    &:hover {
-        background-color: ${colors.background};
-        color: ${colors.Loss};
-
-    }
-`
-
-
-
+  &:hover {
+    background-color: ${colors.background};
+    color: ${colors.Loss};
+  }
+`;
